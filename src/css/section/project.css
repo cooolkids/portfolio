@@ -1,0 +1,143 @@
+.pj_inner {
+    padding: 16px;
+    background-color: var(--point);
+    border-radius: 30px;
+}
+
+
+.pj_title {
+    position: sticky;
+    top: 10%;
+    left: 5%;
+    width: 50%;
+    height: 6vw;
+    font-size: 6vw;
+    font-weight: 900;
+    line-height: 1.2;
+    font-family: var(--mainEng-font);
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+.pj_item {
+    position: sticky;
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    left: 50%;
+    background-color: var(--subBg300);
+    color: var(--black);
+}
+
+.pj_item .num {
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: var(--mainKor-font);
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+}
+
+.pj_item .text {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.pj_item .text div {
+    font-size: 3vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--mainEng-font);
+}
+
+
+
+.pj_item .btn {
+    display: flex;
+    gap: 2vw;
+    transform: uppercase;
+    font-size: 1rem;
+    transition: .35s;
+}
+
+.pj_item .btn a:hover {
+    color: var(--point);
+}
+
+.pj_item .btn a:hover img{
+    transform: scale(0.9) rotate(-15deg);
+}
+
+.pj_item .info {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 98%;
+    margin-left: 1%;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    display: flex;
+    justify-content: space-between;
+}
+
+.pj_item .info span {
+    font-family: var(--mainKor-font);
+    font-size: 12px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+.pj_item .btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pj_item .btn a img{
+    width: 19%;
+}
+
+
+/* --------------------------------------- */
+
+@media screen and (max-width:768px) {
+    .pj_title {
+        width: 100%;
+        font-size: 40px;
+        height: auto;
+        margin-left: 30px;
+        top: 60px;
+        z-index: 0;
+    }
+
+    .pj_item{
+        width: 100%;
+        border: 1px solid #e0e0e0;
+    }
+    
+    .pj_item.s1{top: 120px;}
+    .pj_item.s2{top: 220px;}
+    .pj_item.s3{top: 320px;}
+
+    .pj_item .num{
+        font-size: 40px;
+        left: 20px;
+        top: 20px;
+    }
+    .pj_item .text div{
+        font-size: 20px;
+    }
+    .pj_item .info{
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        padding: 5px;
+    }
+}

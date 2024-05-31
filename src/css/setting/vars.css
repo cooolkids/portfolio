@@ -1,0 +1,45 @@
+:root {
+    /* 메인영어폰트 */
+    --mainEng-font:"Pretendard Variable";
+    /* 메인한글폰트 */
+    --mainKor-font:"Noto Sans KR";
+    /* 메인bg컬러 */ 
+    --mainBg-color:#f3f3f3;
+    /* 서브bg100 */
+    --subBg100:#bce7ff;
+    /* 서브bg200 */
+    --subBg200:#D0E4FF;
+    /* 서브bg300 */
+    --subBg300:#EDF0F5;
+--white:#fff;
+--black: #000;
+--black100: #0B111D;
+--point:#FABF25;
+
+font-family: var(--mainEng-font), var(--mainKor-font);
+font-size: 16px;
+line-height: 1.5;
+font-weight: 400;
+/* 아이폰 가로 모드에서 글씨 확대 금지 */
+-webkit-text-size-adjust: 100%;
+/* 폰트를 부드럽게 랜더링하기 위한 속성 */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+font-synthesis: none;
+
+}
+
+@media screen and (max-width:768px) {
+:root {
+    font-size: 14px;
+    font-family: var(--mainEng-font);
+}
+
+
+} 
+
+body{
+    color: var(--black);
+    background: var(--mainBg-color);
+}

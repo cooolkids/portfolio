@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@studio-freight/lenis": "^1.0.42",
+    "fancybox": "^3.0.1",
+    "gsap": "^3.12.5",
+    "parallax-js": "^3.1.0",
+    "pretendard": "^1.3.9"
+  }
+}
