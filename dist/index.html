@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/clouddd-DG8lgIH_.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>port</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <script type="module" crossorigin src="/assets/index-tFKk5caW.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CZjqNaZs.css">
+</head>
+
+<body>
+  <div class="preloader-c-area">
+    <div class="intro-text">Into the PORT</div>
+    <div id="loading-number">0</div>
+    <div class="intro_line"></div>
+    <div class="preloader-c c-1"></div>
+    <div class="preloader-c c-2"></div>
+    <div class="preloader-c c-3"></div>
+    <div class="preloader-c c-4"></div>
+  </div>
+  <header id="header" role="banner">
+    <div class="header_inner">
+      <div class="header_logo"><a href="./index.html"><img src="data:image/png;base64,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">PORT</a></div>
+      <nav class="header_nav" role="navigation" aria-label="메인메뉴" aria-controls="primary-menu" aria-expanded="false">
+        <ul>
+          <li><a href="#Home" class="on">HOME</a></li>
+          <li><a href="#Project">PROJECT</a></li>
+          <li><a href="#Work">WORK</a></li>
+          <li><a href="#Graphics">GRAPHICS</a></li>
+          <li><a href="#About">ABOUTME</a></li>
+        </ul>
+      </nav>
+      <div class="header_nav_mobile" id="headerToggle" aria-controls="primary-menu" role="button" tabindex="0">
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="Home" class="item">
+      <div class="home-wrap">
+        <div class="backimg bi1" data-depth="0.18"><img src="/assets/Bg-pattern-ikryYCXO.png"></div>
+        <div class="backimg bi2" data-depth="0.17"><img src="/assets/Bg-pattern2-OvfXHj_2.png"></div>
+        <div class="items__inner home-inner" id="js-scene">
+          <div class="items__layer layer" data-depth="0.16">
+            <div class="items__item img1"><img src="/assets/mainline-BGD91X8X.png"></div>
+          </div>
+          <div class="items__layer layer" data-depth="0.18">
+            <div class="items__item img2"><img src="/assets/combine1-Bmo61ZTo.png"></div>
+          </div>
+          <div class="items__layer layer" data-depth="0.60">
+            <div class="items__item img3"><img src="/assets/silversticker-eCYQnehS.png"></div>
+          </div>
+          <div class="items__layer layer" data-depth="0.22">
+            <div class="items__item img4"><img src="/assets/cloud1-DzmDRNfz.png"></div>
+          </div>
+          <div class="items__layer layer" data-depth="0.24">
+            <div class="items__item img5"><img src="/assets/combine2-BdWmtaJV.png"></div>
+          </div>
+        </div>
+        <h1>
+          <a href="" class="typewrite" data-period="2000" data-type='[ "Let’s Travel with me" ]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+
+      </div>
+
+    </section>
+    <section id="Project" class="item">
+      <div class="pj_inner">
+        <h2 class="pj_title">The project:</h2>
+        <div class="pj_wrap">
+          <article class="pj_item s1">
+            <span class="num">
+              1.
+            </span>
+            <div class="text">
+              <div>WEB renewal</div>
+              <div>teamwork project</div>
+            </div>
+            <h3>그라운드시소 리뉴얼</h3>
+            <div class="btn">
+              <a href="./src/imgs/ground-p.jpg" data-fancybox="gallery">프로세서보기<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOdSURBVHgBvVdLUttAEB1/KFZIQLGiZP6rmAvYF4ADEHbZwR7QAcAHMMUmqxAO4HAAwwEwF1CygeIje0sheUP4Oe+JHpdDCUu2Zbpqasaj8fSb1z3dPSnVgywtLRVeXl6KqVTqS6vVWsaU1fHZQfPRqplMpnZxceHE3TcVtQCKDSjehOIVKM5TEcZnr6+vLvq6KDbwzUqn03kBZ6C5aOWrq6tfA4GQkx+otxNT8f7NzU1NRcjc3NwKAK0D0CrBgJk1MFPvGcT8/LyNbofKAWTv9vY2Nr1apqenc6Ojo8c8hBygHPvPOMkBQDRmZ2d3VAKCvXZkPzvse+b9xMLCQgndN7St6+vrnyoBub+/r01MTCj4kG2aZsrzvFo3xLYg3lBDEM0IfSZ0weLiYk4W7KkhCpg+gp4/k5OThp5L6wE8mfZ3fd/fV0MU3Jot9mNjYxv/gSALALGOYfnu7s5XQxRcVe7/A2A2NRsBCM1CnMCShCBuHLLXbGgQRbTIIJSUkA3clCrYKAYgEBUZii2AqKgBBQ53inY+MzOTj1orhy7QJOnn5+cgCTWbzZ4jYsjGjIgm6D7G4axua8FCwDxMkk+DliApJeGQCG4nzBMcI9QfdV7D9wK9noCxsjLnhS3EnT7F6Uz1lhH1H33MubKkzmzKwcjIiENbM4WDhTWAODYMo4TDbYftzbUwHYdmVnURKKMXW1BOagnGkFbQv3ESJSenT5BNV4Ax1a9jzsGtO+ymR4Mwwz7iz5HOKrbPwbcMKGW8scTEOVlSAhCvy/X3CIJ53qD9+vELqROCWoFBDywEeQFAmgDE8TYS1kkI+DzZw/p6ll6KQeClANF3rGDywz4MevQZDyAc/N5FDRHKJgAE15i3Mnt5eenSlizfMNc3CChmiVfGpodxGJVy0WmvZQ3BzKY+SXTGRvvK34FrwyRVdIaeHLbATEyW6vHxsdYGAeeqgR5O2N0CTBJCFtCxCK40Go16GwTl4eGBQcUcHx+31RBFMnbr6empXfS2a0w4lI868C+GNnoXdeFvlbBIBc/0vYvq/fzDhSjvSp1OkySAnir4jpI/EdPI7fsQQCZsEqao6hIdfXFqauqsn2jKFxxK/CMMVyVwfQ9bF/sZCEAVjCtRz0C+XdHlodSGEzLRRb7gIh/EFFDJe03TMFkFD2JGO/X2GA4exJJpl+XRTCBnaJWBH8TvRZgpQGEBynjfcx2fmbodlm1gwYnzcNbyD/iD7kRr4sDjAAAAAElFTkSuQmCC"></a>
+              <a href="https://cooolkids.github.io/groundseesaw/">사이트보기<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOdSURBVHgBvVdLUttAEB1/KFZIQLGiZP6rmAvYF4ADEHbZwR7QAcAHMMUmqxAO4HAAwwEwF1CygeIje0sheUP4Oe+JHpdDCUu2Zbpqasaj8fSb1z3dPSnVgywtLRVeXl6KqVTqS6vVWsaU1fHZQfPRqplMpnZxceHE3TcVtQCKDSjehOIVKM5TEcZnr6+vLvq6KDbwzUqn03kBZ6C5aOWrq6tfA4GQkx+otxNT8f7NzU1NRcjc3NwKAK0D0CrBgJk1MFPvGcT8/LyNbofKAWTv9vY2Nr1apqenc6Ojo8c8hBygHPvPOMkBQDRmZ2d3VAKCvXZkPzvse+b9xMLCQgndN7St6+vrnyoBub+/r01MTCj4kG2aZsrzvFo3xLYg3lBDEM0IfSZ0weLiYk4W7KkhCpg+gp4/k5OThp5L6wE8mfZ3fd/fV0MU3Jot9mNjYxv/gSALALGOYfnu7s5XQxRcVe7/A2A2NRsBCM1CnMCShCBuHLLXbGgQRbTIIJSUkA3clCrYKAYgEBUZii2AqKgBBQ53inY+MzOTj1orhy7QJOnn5+cgCTWbzZ4jYsjGjIgm6D7G4axua8FCwDxMkk+DliApJeGQCG4nzBMcI9QfdV7D9wK9noCxsjLnhS3EnT7F6Uz1lhH1H33MubKkzmzKwcjIiENbM4WDhTWAODYMo4TDbYftzbUwHYdmVnURKKMXW1BOagnGkFbQv3ESJSenT5BNV4Ax1a9jzsGtO+ymR4Mwwz7iz5HOKrbPwbcMKGW8scTEOVlSAhCvy/X3CIJ53qD9+vELqROCWoFBDywEeQFAmgDE8TYS1kkI+DzZw/p6ll6KQeClANF3rGDywz4MevQZDyAc/N5FDRHKJgAE15i3Mnt5eenSlizfMNc3CChmiVfGpodxGJVy0WmvZQ3BzKY+SXTGRvvK34FrwyRVdIaeHLbATEyW6vHxsdYGAeeqgR5O2N0CTBJCFtCxCK40Go16GwTl4eGBQcUcHx+31RBFMnbr6empXfS2a0w4lI868C+GNnoXdeFvlbBIBc/0vYvq/fzDhSjvSp1OkySAnir4jpI/EdPI7fsQQCZsEqao6hIdfXFqauqsn2jKFxxK/CMMVyVwfQ9bF/sZCEAVjCtRz0C+XdHlodSGEzLRRb7gIh/EFFDJe03TMFkFD2JGO/X2GA4exJJpl+XRTCBnaJWBH8TvRZgpQGEBynjfcx2fmbodlm1gwYnzcNbyD/iD7kRr4sDjAAAAAElFTkSuQmCC"></a>
+            </div>
+            <div class="info">
+              <span>site coding(main,visit)</span>
+              <span>production period:12.07~02.07</span>
+              <span>use stack:html,css,jquery,vanila js</span>
+            </div>
+          </article>
+          <article class="pj_item s2">
+            <span class="num">
+              2.
+            </span>
+            <div class="text">
+              <div>APP project</div>
+              <div>develop application</div>
+            </div>
+            <h3>MYSELF 앱 만들기</h3>
+            <div class="btn">
+              <a href="./assets/myself-p.jpg" data-fancybox="gallery">프로세서보기<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOdSURBVHgBvVdLUttAEB1/KFZIQLGiZP6rmAvYF4ADEHbZwR7QAcAHMMUmqxAO4HAAwwEwF1CygeIje0sheUP4Oe+JHpdDCUu2Zbpqasaj8fSb1z3dPSnVgywtLRVeXl6KqVTqS6vVWsaU1fHZQfPRqplMpnZxceHE3TcVtQCKDSjehOIVKM5TEcZnr6+vLvq6KDbwzUqn03kBZ6C5aOWrq6tfA4GQkx+otxNT8f7NzU1NRcjc3NwKAK0D0CrBgJk1MFPvGcT8/LyNbofKAWTv9vY2Nr1apqenc6Ojo8c8hBygHPvPOMkBQDRmZ2d3VAKCvXZkPzvse+b9xMLCQgndN7St6+vrnyoBub+/r01MTCj4kG2aZsrzvFo3xLYg3lBDEM0IfSZ0weLiYk4W7KkhCpg+gp4/k5OThp5L6wE8mfZ3fd/fV0MU3Jot9mNjYxv/gSALALGOYfnu7s5XQxRcVe7/A2A2NRsBCM1CnMCShCBuHLLXbGgQRbTIIJSUkA3clCrYKAYgEBUZii2AqKgBBQ53inY+MzOTj1orhy7QJOnn5+cgCTWbzZ4jYsjGjIgm6D7G4axua8FCwDxMkk+DliApJeGQCG4nzBMcI9QfdV7D9wK9noCxsjLnhS3EnT7F6Uz1lhH1H33MubKkzmzKwcjIiENbM4WDhTWAODYMo4TDbYftzbUwHYdmVnURKKMXW1BOagnGkFbQv3ESJSenT5BNV4Ax1a9jzsGtO+ymR4Mwwz7iz5HOKrbPwbcMKGW8scTEOVlSAhCvy/X3CIJ53qD9+vELqROCWoFBDywEeQFAmgDE8TYS1kkI+DzZw/p6ll6KQeClANF3rGDywz4MevQZDyAc/N5FDRHKJgAE15i3Mnt5eenSlizfMNc3CChmiVfGpodxGJVy0WmvZQ3BzKY+SXTGRvvK34FrwyRVdIaeHLbATEyW6vHxsdYGAeeqgR5O2N0CTBJCFtCxCK40Go16GwTl4eGBQcUcHx+31RBFMnbr6empXfS2a0w4lI868C+GNnoXdeFvlbBIBc/0vYvq/fzDhSjvSp1OkySAnir4jpI/EdPI7fsQQCZsEqao6hIdfXFqauqsn2jKFxxK/CMMVyVwfQ9bF/sZCEAVjCtRz0C+XdHlodSGEzLRRb7gIh/EFFDJe03TMFkFD2JGO/X2GA4exJJpl+XRTCBnaJWBH8TvRZgpQGEBynjfcx2fmbodlm1gwYnzcNbyD/iD7kRr4sDjAAAAAElFTkSuQmCC"></a>
+              <a href="https://www.figma.com/design/jFl2eClN3Gf9sJXI8Q1UyC/MYSELF-PROTOTYPE?node-id=0-1&t=kN4ZOJWDWcHTHRwF-1">피그마보기<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOdSURBVHgBvVdLUttAEB1/KFZIQLGiZP6rmAvYF4ADEHbZwR7QAcAHMMUmqxAO4HAAwwEwF1CygeIje0sheUP4Oe+JHpdDCUu2Zbpqasaj8fSb1z3dPSnVgywtLRVeXl6KqVTqS6vVWsaU1fHZQfPRqplMpnZxceHE3TcVtQCKDSjehOIVKM5TEcZnr6+vLvq6KDbwzUqn03kBZ6C5aOWrq6tfA4GQkx+otxNT8f7NzU1NRcjc3NwKAK0D0CrBgJk1MFPvGcT8/LyNbofKAWTv9vY2Nr1apqenc6Ojo8c8hBygHPvPOMkBQDRmZ2d3VAKCvXZkPzvse+b9xMLCQgndN7St6+vrnyoBub+/r01MTCj4kG2aZsrzvFo3xLYg3lBDEM0IfSZ0weLiYk4W7KkhCpg+gp4/k5OThp5L6wE8mfZ3fd/fV0MU3Jot9mNjYxv/gSALALGOYfnu7s5XQxRcVe7/A2A2NRsBCM1CnMCShCBuHLLXbGgQRbTIIJSUkA3clCrYKAYgEBUZii2AqKgBBQ53inY+MzOTj1orhy7QJOnn5+cgCTWbzZ4jYsjGjIgm6D7G4axua8FCwDxMkk+DliApJeGQCG4nzBMcI9QfdV7D9wK9noCxsjLnhS3EnT7F6Uz1lhH1H33MubKkzmzKwcjIiENbM4WDhTWAODYMo4TDbYftzbUwHYdmVnURKKMXW1BOagnGkFbQv3ESJSenT5BNV4Ax1a9jzsGtO+ymR4Mwwz7iz5HOKrbPwbcMKGW8scTEOVlSAhCvy/X3CIJ53qD9+vELqROCWoFBDywEeQFAmgDE8TYS1kkI+DzZw/p6ll6KQeClANF3rGDywz4MevQZDyAc/N5FDRHKJgAE15i3Mnt5eenSlizfMNc3CChmiVfGpodxGJVy0WmvZQ3BzKY+SXTGRvvK34FrwyRVdIaeHLbATEyW6vHxsdYGAeeqgR5O2N0CTBJCFtCxCK40Go16GwTl4eGBQcUcHx+31RBFMnbr6empXfS2a0w4lI868C+GNnoXdeFvlbBIBc/0vYvq/fzDhSjvSp1OkySAnir4jpI/EdPI7fsQQCZsEqao6hIdfXFqauqsn2jKFxxK/CMMVyVwfQ9bF/sZCEAVjCtRz0C+XdHlodSGEzLRRb7gIh/EFFDJe03TMFkFD2JGO/X2GA4exJJpl+XRTCBnaJWBH8TvRZgpQGEBynjfcx2fmbodlm1gwYnzcNbyD/iD7kRr4sDjAAAAAElFTkSuQmCC"></a>
+            </div>
+            <div class="info">
+              <span>develop app</span>
+              <span>production period:02.16~04.23</span>
+              <span>use stack:figma</span>
+            </div>
+          </article>
+          <article class="pj_item s3">
+            <span class="num">
+              3.
+            </span>
+            <div class="text">
+              <div>portfolio</div>
+              <div>personal project</div>
+            </div>
+            <h3>포트폴리오 제작 및 구현</h3>
+            <div class="btn">
+              <a href="./assets/portfolio-p.jpg" data-fancybox="gallery">프로세서보기<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOdSURBVHgBvVdLUttAEB1/KFZIQLGiZP6rmAvYF4ADEHbZwR7QAcAHMMUmqxAO4HAAwwEwF1CygeIje0sheUP4Oe+JHpdDCUu2Zbpqasaj8fSb1z3dPSnVgywtLRVeXl6KqVTqS6vVWsaU1fHZQfPRqplMpnZxceHE3TcVtQCKDSjehOIVKM5TEcZnr6+vLvq6KDbwzUqn03kBZ6C5aOWrq6tfA4GQkx+otxNT8f7NzU1NRcjc3NwKAK0D0CrBgJk1MFPvGcT8/LyNbofKAWTv9vY2Nr1apqenc6Ojo8c8hBygHPvPOMkBQDRmZ2d3VAKCvXZkPzvse+b9xMLCQgndN7St6+vrnyoBub+/r01MTCj4kG2aZsrzvFo3xLYg3lBDEM0IfSZ0weLiYk4W7KkhCpg+gp4/k5OThp5L6wE8mfZ3fd/fV0MU3Jot9mNjYxv/gSALALGOYfnu7s5XQxRcVe7/A2A2NRsBCM1CnMCShCBuHLLXbGgQRbTIIJSUkA3clCrYKAYgEBUZii2AqKgBBQ53inY+MzOTj1orhy7QJOnn5+cgCTWbzZ4jYsjGjIgm6D7G4axua8FCwDxMkk+DliApJeGQCG4nzBMcI9QfdV7D9wK9noCxsjLnhS3EnT7F6Uz1lhH1H33MubKkzmzKwcjIiENbM4WDhTWAODYMo4TDbYftzbUwHYdmVnURKKMXW1BOagnGkFbQv3ESJSenT5BNV4Ax1a9jzsGtO+ymR4Mwwz7iz5HOKrbPwbcMKGW8scTEOVlSAhCvy/X3CIJ53qD9+vELqROCWoFBDywEeQFAmgDE8TYS1kkI+DzZw/p6ll6KQeClANF3rGDywz4MevQZDyAc/N5FDRHKJgAE15i3Mnt5eenSlizfMNc3CChmiVfGpodxGJVy0WmvZQ3BzKY+SXTGRvvK34FrwyRVdIaeHLbATEyW6vHxsdYGAeeqgR5O2N0CTBJCFtCxCK40Go16GwTl4eGBQcUcHx+31RBFMnbr6empXfS2a0w4lI868C+GNnoXdeFvlbBIBc/0vYvq/fzDhSjvSp1OkySAnir4jpI/EdPI7fsQQCZsEqao6hIdfXFqauqsn2jKFxxK/CMMVyVwfQ9bF/sZCEAVjCtRz0C+XdHlodSGEzLRRb7gIh/EFFDJe03TMFkFD2JGO/X2GA4exJJpl+XRTCBnaJWBH8TvRZgpQGEBynjfcx2fmbodlm1gwYnzcNbyD/iD7kRr4sDjAAAAAElFTkSuQmCC"></a>
+              <a href="https://www.figma.com/design/O5yOabVZvFyrBO9areEBjU/PORTFOLIO-PROTOTYPE?node-id=0-1&t=WRPBHbUw01o0UYM3-1">피그마보기<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOdSURBVHgBvVdLUttAEB1/KFZIQLGiZP6rmAvYF4ADEHbZwR7QAcAHMMUmqxAO4HAAwwEwF1CygeIje0sheUP4Oe+JHpdDCUu2Zbpqasaj8fSb1z3dPSnVgywtLRVeXl6KqVTqS6vVWsaU1fHZQfPRqplMpnZxceHE3TcVtQCKDSjehOIVKM5TEcZnr6+vLvq6KDbwzUqn03kBZ6C5aOWrq6tfA4GQkx+otxNT8f7NzU1NRcjc3NwKAK0D0CrBgJk1MFPvGcT8/LyNbofKAWTv9vY2Nr1apqenc6Ojo8c8hBygHPvPOMkBQDRmZ2d3VAKCvXZkPzvse+b9xMLCQgndN7St6+vrnyoBub+/r01MTCj4kG2aZsrzvFo3xLYg3lBDEM0IfSZ0weLiYk4W7KkhCpg+gp4/k5OThp5L6wE8mfZ3fd/fV0MU3Jot9mNjYxv/gSALALGOYfnu7s5XQxRcVe7/A2A2NRsBCM1CnMCShCBuHLLXbGgQRbTIIJSUkA3clCrYKAYgEBUZii2AqKgBBQ53inY+MzOTj1orhy7QJOnn5+cgCTWbzZ4jYsjGjIgm6D7G4axua8FCwDxMkk+DliApJeGQCG4nzBMcI9QfdV7D9wK9noCxsjLnhS3EnT7F6Uz1lhH1H33MubKkzmzKwcjIiENbM4WDhTWAODYMo4TDbYftzbUwHYdmVnURKKMXW1BOagnGkFbQv3ESJSenT5BNV4Ax1a9jzsGtO+ymR4Mwwz7iz5HOKrbPwbcMKGW8scTEOVlSAhCvy/X3CIJ53qD9+vELqROCWoFBDywEeQFAmgDE8TYS1kkI+DzZw/p6ll6KQeClANF3rGDywz4MevQZDyAc/N5FDRHKJgAE15i3Mnt5eenSlizfMNc3CChmiVfGpodxGJVy0WmvZQ3BzKY+SXTGRvvK34FrwyRVdIaeHLbATEyW6vHxsdYGAeeqgR5O2N0CTBJCFtCxCK40Go16GwTl4eGBQcUcHx+31RBFMnbr6empXfS2a0w4lI868C+GNnoXdeFvlbBIBc/0vYvq/fzDhSjvSp1OkySAnir4jpI/EdPI7fsQQCZsEqao6hIdfXFqauqsn2jKFxxK/CMMVyVwfQ9bF/sZCEAVjCtRz0C+XdHlodSGEzLRRb7gIh/EFFDJe03TMFkFD2JGO/X2GA4exJJpl+XRTCBnaJWBH8TvRZgpQGEBynjfcx2fmbodlm1gwYnzcNbyD/iD7kRr4sDjAAAAAElFTkSuQmCC"></a>
+            </div>
+            <div class="info">
+              <span>make portfolio</span>
+              <span>production period:04.01~05.30</span>
+              <span>use stack:html,css,vanila js</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="Work" class="item">
+      <h2 class="work_title">work</h2>
+      <p class="click1">click! drag!</p>
+      <div class="i_am">
+        <ul>
+          <li class="flow_list">
+            <div class="splide" id="splide">
+              <div class="splide__track splide__track-1">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <article class="work_item re w1">
+                      <a href="https://cooolkids.github.io/watcha/" target="_blank" class="img"><img
+                          src="/assets/watcha-DQjXBxnE.png" alt=""></a>
+                      <p>왓챠 메인페이지 리뉴얼</p>
+                    </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="work_item re w2">
+                      <a href="https://cooolkids.github.io/mugo/" target="_blank" class="img"><img
+                          src="/assets/mugo-CaAY6Kht.png" alt=""></a>
+                          <p>뮤고박스 메인페이지 클론코딩</p>
+                    </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="work_item re w3">
+                      <a href="https://cooolkids.github.io/woodam/" target="_blank" class="img"><img src="/assets/woodam-R9c1WAH4.png" alt=""></a>
+                    <p>우담라이팅 메이페이지 클론코딩</p>
+                    </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="work_item re w4">
+                      <a href="https://cooolkids.github.io/hakit/" target="_blank" class="img"><img
+                          src="/assets/hakit-CCaaifdg.jpg" alt=""></a>
+                    <p>하킷 메인페이지 리뉴얼(반응형)</p>
+                    </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="work_item re w5">
+                      <a href="https://cooolkids.github.io/beanpole/" target="_blank" class="img"><img src="/assets/beanpole-DAUxAYn6.jpg" alt=""></a>
+                      <p>빈폴 메인페이지 클론코딩</p>
+                    </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="work_item re w7">
+                      <a href="https://cooolkids.github.io/10x10/" target="_blank" class="img"><img
+                          src="/assets/10x10-xet-zlpr.jpg" alt=""></a>
+                          <p>10X10 메인페이지 리뉴얼</p>
+                        </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="work_item re w8">
+                      <a href="https://cooolkids.github.io/sulwhasoo/" target="_blank" class="img"><img src="/assets/sulwhasoo-1zo9kh90.png" alt=""></a>
+                      <p>설화수 메인페이지 리뉴얼</p>
+                    </article>
+                  </li>
+                  <li class="splide__slide">
+                    <article class="work_item re w9">
+                      <a href="https://cooolkids.github.io/clio/" target="_blank" class="img"><img src="/assets/clio-BH9Y3JeJ.jpg" alt=""></a>
+                      <p>클리오 메인페이지 리뉴얼(반응형)</p>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="Graphics" class="item">
+      <div class="graphics_inner">
+        <div class="graph-text">
+          <h2 class="graph_title">graphics</h2>
+          <p class="click2">click!</p>
+          <div class="img_text">
+            <p class="title1">사람들의 이목을 집중시키는 디자인을 만듭니다.</p>
+          </div>
+        </div>
+        <article class="stage">
+          <div class="inner">
+            <div class="img-wrap">
+              <div class="img-inner">
+                <ul class="column">
+                  <li class="img-text">
+                    <p class="ex ex1">poster design</p>
+                  </li>
+                  <li class="p1">
+                    <p class="img_box">
+                      <a href="./assets/플리마켓포스터(수정2).jpg" data-fancybox="gallery"><img src="/assets/%ED%94%8C%EB%A6%AC%EB%A7%88%EC%BC%93%EC%8D%B8%EB%84%A4%EC%9D%BC-D19zzv8t.jpg"
+                          alt=""></a>
+                    </p>
+                  </li>
+                  <li class="p2">
+                    <p class="img_box">
+                      <a href="./assets/예술창작포스터(수정).jpg" data-fancybox="gallery"><img src="/assets/2024%EC%98%88%EC%88%A0%EC%B0%BD%EC%9E%91%EC%8D%B8%EB%84%A4%EC%9D%BC-B2tq3w1_.jpg"
+                          alt=""></a>
+                    </p>
+                  </li>
+                </ul>
+                <ul class="column2">
+                  <li class="ad1">
+                    <p class="img_box">
+                      <a href="./assets/구달.jpg" data-fancybox="gallery"><img src="/assets/%EA%B5%AC%EB%8B%AC%EC%8D%B8%EB%84%A4%EC%9D%BC-t0JrCTkl.jpg" alt=""></a>
+                    </p>
+                  </li>
+                  <li class="ad2">
+                    <p class="img_box">
+                      <a href="./assets/레드불(수정).jpg" data-fancybox="gallery"><img src="/assets/%EB%A0%88%EB%93%9C%EB%B6%88%EC%8D%B8%EB%84%A4%EC%9D%BC-GJk6ad2p.jpg"
+                          alt=""></a>
+                    </p>
+                  </li>
+                  <li class="img-text">
+                    <p class="ex ex2">graphic design</p>
+                  </li>
+                </ul>
+                <ul class="column3">
+                  <li class="img-text">
+                    <p class="ex ex3">detail page design</p>
+                  </li>
+                  <li class="d1">
+                    <p class="img_box">
+                      <a href="./assets/travellog.jpg" data-fancybox="gallery"><img src="/assets/%ED%8A%B8%EB%A0%88%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%8D%B8%EB%84%A4%EC%9D%BC-F1yuMpXG.jpg"
+                          alt=""></a>
+                    </p>
+                  </li>
+                  <li class="d2">
+                    <p class="img_box">
+                      <a href="./assets/winsaf.jpg" data-fancybox="gallery"><img src="/assets/%EC%9C%88%EC%84%B8%ED%94%84%EC%8D%B8%EB%84%A4%EC%9D%BC-tMnMAZx_.jpg"
+                          alt=""></a>
+                    </p>
+                  </li>
+                </ul>
+                <ul class="column4">
+                  <li class="img-text">
+                    <p class="ex ex4">symbol logo detail page</p>
+                  </li>
+                  <li class="sym1">
+                    <p class="img_box">
+                      <a href="./assets/maroo.jpg" data-fancybox="gallery"><img src="/assets/maroo%EC%8D%B8%EB%84%A4%EC%9D%BC-CMIcMT8m.jpg"
+                          alt=""></a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="About" class="item">
+      <h2 class="about_title">about me</h2>
+      <div class="about_inner">
+        <div class="about-wrap1 flex">
+          <div class="item_img center">
+            <div class="symbol"><img src="/assets/cloudplane-DzJXFYCH.png"></div>
+          </div>
+          <div class="mywrap-inner center">
+            <div class="my-wrap">
+              <div class="skills">
+                <h3>skills</h3>
+                <div class="inform">
+                  <ul class="skill-list flex">
+                    <li class="s-list1"><img src="data:image/svg+xml,%3csvg%20width='100'%20height='100'%20viewBox='0%200%20100%20100'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_483_22)'%3e%3cpath%20d='M50%20100C22.4224%20100%200%2077.5776%200%2050C0%2022.4224%2022.4224%200%2050%200C77.5776%200%20100%2022.4224%20100%2050C100%2077.5776%2077.5776%20100%2050%20100ZM50%2013.8581C30.0721%2013.8581%2013.8581%2030.0721%2013.8581%2050C13.8581%2069.9279%2030.0721%2086.1419%2050%2086.1419C69.9279%2086.1419%2086.1419%2069.9279%2086.1419%2050C86.1419%2030.0721%2069.9279%2013.8581%2050%2013.8581Z'%20fill='%23CCCCCB'/%3e%3cpath%20d='M50%20100C22.4224%20100%200%2077.5776%200%2050C0%2022.4224%2022.4224%200%2050%200C61.8071%200%2073.2816%204.18514%2082.2894%2011.8071L73.337%2022.3947C66.8237%2016.8792%2058.5366%2013.8581%2050%2013.8581C30.0721%2013.8581%2013.8581%2030.0721%2013.8581%2050C13.8581%2069.9279%2030.0721%2086.1419%2050%2086.1419C69.9279%2086.1419%2086.1419%2069.9279%2086.1419%2050H100C100%2077.5776%2077.5776%20100%2050%20100Z'%20fill='black'/%3e%3cpath%20d='M41.4062%2046V33.2734H45.7305C48.7188%2033.2734%2050.0723%2035.0488%2050.0723%2037.3164C50.0723%2039.5664%2048.7188%2041.377%2045.748%2041.377H42.9883V46H41.4062ZM42.9883%2039.9707H45.6777C47.6992%2039.9707%2048.5078%2038.8281%2048.5078%2037.3164C48.5078%2035.7871%2047.6992%2034.6797%2045.6602%2034.6797H42.9883V39.9707ZM57.4023%2038.9336C57.1914%2038.1426%2056.5938%2037.6152%2055.4688%2037.6152C54.291%2037.6152%2053.4473%2038.248%2053.4473%2039.0566C53.4473%2039.6895%2053.957%2040.1289%2055.082%2040.3926L56.5059%2040.7441C58.2109%2041.1484%2059.0547%2041.9922%2059.0547%2043.3281C59.0547%2044.9805%2057.7012%2046.1934%2055.3105%2046.1934C53.166%2046.1934%2051.8828%2045.2441%2051.6367%2043.5039H53.2188C53.3945%2044.4355%2054.0801%2044.875%2055.2754%2044.875C56.6289%2044.875%2057.4902%2044.3125%2057.4902%2043.416C57.4902%2042.748%2057.0156%2042.291%2055.9258%2042.0449L54.4844%2041.7109C52.8145%2041.3242%2051.9355%2040.4102%2051.9355%2039.1445C51.9355%2037.5098%2053.3594%2036.332%2055.4688%2036.332C57.4375%2036.332%2058.6855%2037.3867%2058.8789%2038.9336H57.4023Z'%20fill='black'/%3e%3cpath%20d='M36.4492%2067.1758C33.7773%2067.1758%2031.9141%2065.6992%2031.9316%2063.625C31.9141%2061.9727%2033.0566%2060.6191%2034.5156%2060.3906V60.3203C33.25%2060.0215%2032.4238%2058.8613%2032.4238%2057.4727C32.4238%2055.5215%2034.1289%2054.0977%2036.4492%2054.0977C38.7695%2054.0977%2040.4746%2055.5215%2040.4922%2057.4727C40.4746%2058.8613%2039.6309%2060.0215%2038.3828%2060.3203V60.3906C39.8242%2060.6191%2040.9668%2061.9727%2040.9844%2063.625C40.9668%2065.6992%2039.1035%2067.1758%2036.4492%2067.1758ZM36.4492%2065.7871C38.2773%2065.7871%2039.4023%2064.873%2039.4023%2063.5371C39.4023%2062.1309%2038.1543%2061.0938%2036.4492%2061.0938C34.7441%2061.0938%2033.4785%2062.1309%2033.5137%2063.5371C33.4785%2064.873%2034.6211%2065.7871%2036.4492%2065.7871ZM36.4492%2059.7578C37.8906%2059.7578%2038.9453%2058.8789%2038.9453%2057.5957C38.9453%2056.3301%2037.9434%2055.4688%2036.4492%2055.4688C34.9375%2055.4688%2033.9531%2056.3301%2033.9531%2057.5957C33.9531%2058.8789%2034.9902%2059.7578%2036.4492%2059.7578ZM47.2773%2067.1758C44.4473%2067.1758%2042.8301%2064.8027%2042.8301%2060.6367C42.8301%2056.5059%2044.4824%2054.0977%2047.2773%2054.0977C50.0723%2054.0977%2051.7246%2056.5059%2051.7246%2060.6367C51.7246%2064.8027%2050.0898%2067.1758%2047.2773%2067.1758ZM47.2773%2065.7695C49.1055%2065.7695%2050.1777%2063.9238%2050.1777%2060.6367C50.1777%2057.3496%2049.1055%2055.4688%2047.2773%2055.4688C45.4492%2055.4688%2044.3594%2057.3496%2044.3594%2060.6367C44.3594%2063.9238%2045.4316%2065.7695%2047.2773%2065.7695ZM56.5234%2060.1797C54.8711%2060.1797%2053.9746%2058.9492%2053.9746%2057.1211C53.9746%2055.3281%2054.9062%2054.0801%2056.5234%2054.0801C58.1934%2054.0801%2059.0723%2055.3281%2059.0723%2057.1211C59.0723%2058.9492%2058.1582%2060.1797%2056.5234%2060.1797ZM56.5234%2059.0898C57.3848%2059.0898%2057.7891%2058.3164%2057.7891%2057.1211C57.7891%2055.9434%2057.4199%2055.1523%2056.5234%2055.1699C55.6797%2055.1699%2055.2578%2055.9434%2055.2578%2057.1211C55.2578%2058.3164%2055.6797%2059.0898%2056.5234%2059.0898ZM64.293%2067.1758C62.6406%2067.1934%2061.7266%2065.9453%2061.7441%2064.1348C61.7266%2062.3242%2062.6758%2061.0762%2064.293%2061.0762C65.9453%2061.0762%2066.8242%2062.3242%2066.8242%2064.1348C66.8242%2065.9453%2065.9102%2067.1934%2064.293%2067.1758ZM64.293%2066.0859C65.1367%2066.0859%2065.541%2065.3125%2065.541%2064.1348C65.541%2062.9395%2065.1719%2062.1484%2064.293%2062.166C63.4492%2062.1836%2063.0098%2062.9395%2063.0098%2064.1348C63.0098%2065.3125%2063.4316%2066.0859%2064.293%2066.0859ZM55.2227%2067L63.9766%2054.2734H65.4004L56.6465%2067H55.2227Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_483_22'%3e%3crect%20width='100'%20height='100'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"></li>
+                    <li class="s-list2"><img src="data:image/svg+xml,%3csvg%20width='100'%20height='100'%20viewBox='0%200%20100%20100'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_483_10)'%3e%3cpath%20d='M41.3133%2099.2242C14.159%2094.4584%20-4.01782%2068.4678%200.775755%2041.3134C5.56933%2014.1591%2031.5322%20-4.01769%2058.6865%200.775878C85.8409%205.56945%20104.018%2031.5323%2099.2518%2058.6867C94.4859%2085.841%2068.4953%20104.018%2041.341%2099.2242H41.3133ZM56.2759%2014.4085C36.6583%2010.9449%2017.8719%2024.1064%2014.4083%2043.7241C10.9448%2063.3417%2024.1063%2082.1281%2043.7239%2085.5916C63.3416%2089.0552%2082.1279%2075.8936%2085.5915%2056.276C89.055%2036.6584%2075.8935%2017.872%2056.2759%2014.4085Z'%20fill='%23CCCCCB'/%3e%3cpath%20d='M67.0821%2096.9798C41.1746%20106.401%2012.4409%2092.9898%203.02%2067.11C-6.4009%2041.2303%206.98231%2012.4689%2032.8898%203.02026C51.8147%20-3.87916%2072.9009%201.2192%2086.6166%2015.9601L76.4753%2025.4087C66.5556%2014.741%2051.3159%2011.0834%2037.6279%2016.0433C18.897%2022.8595%209.2267%2043.6409%2016.043%2062.3719C22.8593%2081.1028%2043.6407%2090.7731%2062.3716%2083.9845C81.1026%2077.1682%2090.7728%2056.3868%2083.9565%2037.6559L96.9795%2032.9177C106.4%2058.8252%2093.0172%2087.5589%2067.1098%2096.9798H67.0821Z'%20fill='black'/%3e%3cpath%20d='M43.9688%2046H42.3164L46.9746%2033.2734H48.6445L53.3027%2046H51.6328L50.3672%2042.4141H45.252L43.9688%2046ZM45.7266%2041.0254H49.875L47.8535%2035.3301H47.748L45.7266%2041.0254ZM54.9375%2046V36.4551H56.4492V46H54.9375ZM55.6934%2034.873C55.1133%2034.873%2054.6387%2034.4336%2054.6387%2033.8711C54.6387%2033.3086%2055.1133%2032.8691%2055.6934%2032.8691C56.2734%2032.8691%2056.7656%2033.3086%2056.7656%2033.8711C56.7656%2034.4336%2056.2734%2034.873%2055.6934%2034.873Z'%20fill='black'/%3e%3cpath%20d='M36.4316%2054.0977C38.6289%2054.1152%2041.0547%2055.4336%2041.0547%2060.127C41.0547%2064.6445%2039.209%2067.1758%2036.2207%2067.1758C33.9883%2067.1758%2032.4062%2065.8047%2032.0898%2063.7832H33.6543C33.9355%2064.9258%2034.7969%2065.7695%2036.2207%2065.7695C38.2949%2065.7695%2039.5605%2063.9766%2039.5781%2060.8828H39.4023C38.6641%2061.9375%2037.5039%2062.5703%2036.1504%2062.5703C33.8652%2062.5703%2031.9844%2060.8301%2031.9844%2058.3691C31.9844%2055.9961%2033.7246%2054.0801%2036.4316%2054.0977ZM36.4316%2055.4863C34.7617%2055.4863%2033.5137%2056.7871%2033.5312%2058.3516C33.5312%2059.9336%2034.709%2061.1816%2036.3789%2061.1816C38.0312%2061.1816%2039.332%2059.8105%2039.332%2058.3164C39.332%2056.8574%2038.1191%2055.4863%2036.4316%2055.4863ZM47.4004%2067.1758C44.5703%2067.1758%2042.9531%2064.8027%2042.9531%2060.6367C42.9531%2056.5059%2044.6055%2054.0977%2047.4004%2054.0977C50.1953%2054.0977%2051.8477%2056.5059%2051.8477%2060.6367C51.8477%2064.8027%2050.2129%2067.1758%2047.4004%2067.1758ZM47.4004%2065.7695C49.2285%2065.7695%2050.3008%2063.9238%2050.3008%2060.6367C50.3008%2057.3496%2049.2285%2055.4688%2047.4004%2055.4688C45.5723%2055.4688%2044.4824%2057.3496%2044.4824%2060.6367C44.4824%2063.9238%2045.5547%2065.7695%2047.4004%2065.7695ZM56.6465%2060.1797C54.9941%2060.1797%2054.0977%2058.9492%2054.0977%2057.1211C54.0977%2055.3281%2055.0293%2054.0801%2056.6465%2054.0801C58.3164%2054.0801%2059.1953%2055.3281%2059.1953%2057.1211C59.1953%2058.9492%2058.2812%2060.1797%2056.6465%2060.1797ZM56.6465%2059.0898C57.5078%2059.0898%2057.9121%2058.3164%2057.9121%2057.1211C57.9121%2055.9434%2057.543%2055.1523%2056.6465%2055.1699C55.8027%2055.1699%2055.3809%2055.9434%2055.3809%2057.1211C55.3809%2058.3164%2055.8027%2059.0898%2056.6465%2059.0898ZM64.416%2067.1758C62.7637%2067.1934%2061.8496%2065.9453%2061.8672%2064.1348C61.8496%2062.3242%2062.7988%2061.0762%2064.416%2061.0762C66.0684%2061.0762%2066.9473%2062.3242%2066.9473%2064.1348C66.9473%2065.9453%2066.0332%2067.1934%2064.416%2067.1758ZM64.416%2066.0859C65.2598%2066.0859%2065.6641%2065.3125%2065.6641%2064.1348C65.6641%2062.9395%2065.2949%2062.1484%2064.416%2062.166C63.5723%2062.1836%2063.1328%2062.9395%2063.1328%2064.1348C63.1328%2065.3125%2063.5547%2066.0859%2064.416%2066.0859ZM55.3457%2067L64.0996%2054.2734H65.5234L56.7695%2067H55.3457Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_483_10'%3e%3crect%20width='100'%20height='100'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"></li>
+                    <li class="s-list3"><img src="/assets/fig-DdIAuSjR.svg"></li>
+                    <li class="s-list4"><img src="data:image/svg+xml,%3csvg%20width='100'%20height='100'%20viewBox='0%200%20100%20100'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_483_25)'%3e%3cpath%20d='M50%20100C22.4224%20100%200%2077.5776%200%2050C0%2022.4224%2022.4224%200%2050%200C77.5776%200%20100%2022.4224%20100%2050C100%2077.5776%2077.5776%20100%2050%20100ZM50%2013.8581C30.0721%2013.8581%2013.8581%2030.0721%2013.8581%2050C13.8581%2069.9279%2030.0721%2086.1419%2050%2086.1419C69.9279%2086.1419%2086.1419%2069.9279%2086.1419%2050C86.1419%2030.0721%2069.9279%2013.8581%2050%2013.8581Z'%20fill='%23CCCCCB'/%3e%3cpath%20d='M50%20100C22.4224%20100%200%2077.5776%200%2050C0%2022.4224%2022.4224%200%2050%200C61.8071%200%2073.2816%204.18514%2082.2894%2011.8071L73.337%2022.3947C66.8237%2016.8792%2058.5366%2013.8581%2050%2013.8581C30.0721%2013.8581%2013.8581%2030.0721%2013.8581%2050C13.8581%2069.9279%2030.0721%2086.1419%2050%2086.1419C69.9279%2086.1419%2086.1419%2069.9279%2086.1419%2050H100C100%2077.5776%2077.5776%20100%2050%20100Z'%20fill='black'/%3e%3cpath%20d='M26.4062%2046V33.2734H27.9883V38.9336H34.7207V33.2734H36.3203V46H34.7207V40.3223H27.9883V46H26.4062ZM38.4121%2034.6797V33.2734H48.0098V34.6797H44.0195V46H42.4199V34.6797H38.4121ZM50.1191%2033.2734H52.0176L56.3066%2043.75H56.4648L60.7539%2033.2734H62.6523V46H61.1582V36.3848H61.0352L57.0801%2046H55.6738L51.7188%2036.3848H51.6133V46H50.1191V33.2734ZM65.4648%2046V33.2734H67.0469V44.5938H72.9531V46H65.4648Z'%20fill='black'/%3e%3cpath%20d='M35.9492%2067.1758C33.2773%2067.1758%2031.4141%2065.6992%2031.4316%2063.625C31.4141%2061.9727%2032.5566%2060.6191%2034.0156%2060.3906V60.3203C32.75%2060.0215%2031.9238%2058.8613%2031.9238%2057.4727C31.9238%2055.5215%2033.6289%2054.0977%2035.9492%2054.0977C38.2695%2054.0977%2039.9746%2055.5215%2039.9922%2057.4727C39.9746%2058.8613%2039.1309%2060.0215%2037.8828%2060.3203V60.3906C39.3242%2060.6191%2040.4668%2061.9727%2040.4844%2063.625C40.4668%2065.6992%2038.6035%2067.1758%2035.9492%2067.1758ZM35.9492%2065.7871C37.7773%2065.7871%2038.9023%2064.873%2038.9023%2063.5371C38.9023%2062.1309%2037.6543%2061.0938%2035.9492%2061.0938C34.2441%2061.0938%2032.9785%2062.1309%2033.0137%2063.5371C32.9785%2064.873%2034.1211%2065.7871%2035.9492%2065.7871ZM35.9492%2059.7578C37.3906%2059.7578%2038.4453%2058.8789%2038.4453%2057.5957C38.4453%2056.3301%2037.4434%2055.4688%2035.9492%2055.4688C34.4375%2055.4688%2033.4531%2056.3301%2033.4531%2057.5957C33.4531%2058.8789%2034.4902%2059.7578%2035.9492%2059.7578ZM46.7773%2067.1758C43.9473%2067.1758%2042.3301%2064.8027%2042.3301%2060.6367C42.3301%2056.5059%2043.9824%2054.0977%2046.7773%2054.0977C49.5723%2054.0977%2051.2246%2056.5059%2051.2246%2060.6367C51.2246%2064.8027%2049.5898%2067.1758%2046.7773%2067.1758ZM46.7773%2065.7695C48.6055%2065.7695%2049.6777%2063.9238%2049.6777%2060.6367C49.6777%2057.3496%2048.6055%2055.4688%2046.7773%2055.4688C44.9492%2055.4688%2043.8594%2057.3496%2043.8594%2060.6367C43.8594%2063.9238%2044.9316%2065.7695%2046.7773%2065.7695ZM56.0234%2060.1797C54.3711%2060.1797%2053.4746%2058.9492%2053.4746%2057.1211C53.4746%2055.3281%2054.4062%2054.0801%2056.0234%2054.0801C57.6934%2054.0801%2058.5723%2055.3281%2058.5723%2057.1211C58.5723%2058.9492%2057.6582%2060.1797%2056.0234%2060.1797ZM56.0234%2059.0898C56.8848%2059.0898%2057.2891%2058.3164%2057.2891%2057.1211C57.2891%2055.9434%2056.9199%2055.1523%2056.0234%2055.1699C55.1797%2055.1699%2054.7578%2055.9434%2054.7578%2057.1211C54.7578%2058.3164%2055.1797%2059.0898%2056.0234%2059.0898ZM63.793%2067.1758C62.1406%2067.1934%2061.2266%2065.9453%2061.2441%2064.1348C61.2266%2062.3242%2062.1758%2061.0762%2063.793%2061.0762C65.4453%2061.0762%2066.3242%2062.3242%2066.3242%2064.1348C66.3242%2065.9453%2065.4102%2067.1934%2063.793%2067.1758ZM63.793%2066.0859C64.6367%2066.0859%2065.041%2065.3125%2065.041%2064.1348C65.041%2062.9395%2064.6719%2062.1484%2063.793%2062.166C62.9492%2062.1836%2062.5098%2062.9395%2062.5098%2064.1348C62.5098%2065.3125%2062.9316%2066.0859%2063.793%2066.0859ZM54.7227%2067L63.4766%2054.2734H64.9004L56.1465%2067H54.7227Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_483_25'%3e%3crect%20width='100'%20height='100'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"></li>
+                    <li class="s-list5"><img src="/assets/css-BA4XnQJV.svg"></li>
+                    <li class="s-list6"><img src="/assets/javascript-IWxp9X5_.svg"></li>
+                    <li class="s-list7"><img src="/assets/jquery-BLLM8PMO.svg"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="license">
+                <h3>certificate</h3>
+                <ul class="inform">
+                  <li>GTQ그래픽기술자격1급</li>
+                  <li>GTQ일러스트1급</li>
+                </ul>
+              </div>
+              <div class="education">
+                <h3>education</h3>
+                <ul class="inform">
+                  <li>
+                    울산성광여자고등학교 졸업
+                  </li>
+                  <li>
+                    부산외대 중국학부 중퇴
+                  </li>
+                  <li>
+                    학점은행제 경영학과 전문학사과정 수료
+                  </li>
+                  <li>
+                    MBC아카데미 UIUX웹퍼블리셔 프론트엔드 과정 수료
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="AboutK" class="item">
+      <div class="about-keywords">
+        <h4 class="center">keywords</h4>
+        <div class="profile-wrap">
+          <div class="profile-inner">
+            <div class="profile pr1">나날이</div>
+            <div class="profile pr2"><img src="/assets/apicon-B0fKjatR.png"></div>
+            <div class="profile pr3">성장하는</div>
+          </div>
+          <div class="profile-inner">
+            <div class="profile pr4">뭐든지</div>
+            <div class="profile pr5"><img src="/assets/캐리어2.png"></div>
+            <div class="profile pr6">꼼꼼하게</div>
+          </div>
+          <div class="profile-inner">
+            <div class="profile pr7">다양한</div>
+            <div class="profile pr8"><img src="/assets/여권누끼.png"></div>
+            <div class="profile pr9">생각으로</div>
+          </div>
+          <div class="profile-inner">
+            <div class="profile pr10">변화하는</div>
+            <div class="profile pr11"><img src="/assets/cloud1-DzmDRNfz.png"></div>
+            <div class="profile pr12">새로움을</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="AboutMe" class="item">
+      <div class="about-wrap2">
+        <div class="aboutme-wrap wr1 flex">
+          <article class="bg1"></article>
+          <article class="columns">
+            <div class="about-item a1 center">
+              <h4 class="center">introduce</h4>
+              <div class="introduce">
+                안녕하세요. 신입 UIUX디자이너 김가현입니다.
+                <br />
+                <br />저는 수년간 서비스직을 하면서
+                여러사람들과 대화하고 협업하는 법을
+                배우며 성장했습니다.
+                <br />
+                <br />또한 다양한 사람들을 접하며,
+                새로운 생각과 다양한 관점들을 겪고 받아들일 수 있었습니다.
+                <br />
+                <br />이러한 경험들을 바탕으로 새롭고 기억에 남는 것을 디자인하는
+                사람이 되겠습니다.
+                <br />
+                <br />새로운 비상을 위해
+                끊임없이 공부하는 모습
+                보여드리겠습니다.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="AboutC">
+      <div class="about-end center">
+        <h4 class="center">thank you!</h4>
+
+        <div class="greeting center">
+          <p>방문해주셔서 감사합니다.</p>
+          <p>문의사항이 있으시면 언제든 연락주세요.</p>
+        </div>
+        <div class="again-wrap center">
+          <div class="contact">
+            <div class="ct-icon"><img src="/assets/circleline-XLmm-QIA.png"></div>
+          </div>
+          <div class="ct-text">contact</div>
+          <div><img src="data:image/png;base64,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"></div>
+          <div class="call">
+            <div>phone : 010-2098-3722</div>
+            <div>email : gahyun3722@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
