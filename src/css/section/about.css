@@ -219,46 +219,6 @@ ul.skill-list {
     }
 }
 
-/* 
-.modal {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 0;
-    top: 0;
-}
-
-.pr-modal {
-    position: absolute;
-    background: var(--black);
-    color: var(--point);
-    padding: 8px 12px;
-    font-size: 13px;
-    border-radius: 999px;
-    opacity: 0;
-}
-
-.pm1 {
-    left: 45%;
-    bottom: 10px;
-}
-
-.pm2 {
-    right: 48%;
-    top: 90px;
-}
-
-.pm3 {
-    left: 30%;
-    top: 320px;
-}
-
-.pm4 {
-    right: 50%;
-    top: 435px;
-} */
-
-
 
 /* aboutpage */
 
@@ -270,7 +230,7 @@ ul.skill-list {
 
 
 .bg1 {
-    background-image: url(../../imgs/profilew.jpg);
+    background-image: url(../../../public/imgs/profilew.jpg);
     background-size: contain;
     background-position: left top;
     background-attachment: fixed;
