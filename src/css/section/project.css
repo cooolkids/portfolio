@@ -50,6 +50,11 @@
     margin-bottom: 1rem;
 }
 
+.pj_item .text em{
+    color: var(--point);
+    text-decoration: underline;
+}
+
 .pj_item .text div {
     font-size: 3vw;
     font-weight: 900;
