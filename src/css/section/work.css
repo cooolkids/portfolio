@@ -25,7 +25,7 @@
 
 p.click1 {
     position: absolute;
-    top: 14%;
+    top: 12%;
     left: 22%;
     font-size: 2vw;
     color: var(--point);
@@ -65,9 +65,7 @@ p.click1 {
 }
 
 .work_item .img:hover img {
-    transform: scale(1.2);
     filter: grayscale(0%);
-    border-radius: 20px;
 }
 
 .work_item:hover p {

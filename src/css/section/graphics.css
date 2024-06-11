@@ -67,7 +67,7 @@ p.click2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--subBg200);
+    background:var(--subBg100);
     border-radius: 30px;
     padding: 20px;
 }
