@@ -80,8 +80,6 @@ p.click1 {
 .work_item p {
     position: absolute;
     z-index: 1;
-    border-top: 1px solid#000;
-    border-bottom: 1px solid #000;
     font-size: 18px;
     opacity: 0;
     text-align: center;
