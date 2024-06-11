@@ -80,13 +80,13 @@ p.click1 {
 .work_item p {
     position: absolute;
     z-index: 1;
-    font-size: 18px;
+    font-size: 20px;
     opacity: 0;
     text-align: center;
     transition: .35s;
     width: 100%;
     left: 50%;
-    top: 60%;
+    top: 63%;
     transform: translate(-50%, -50%);
 }
 
