@@ -118,32 +118,7 @@ p.click1 {
 
 
 @media screen and (max-width:768px) {
-    .work_title {
-        width: 100%;
-        margin-bottom: 16px;
-        font-size: 30px;
-        height: auto;
-        top: -30px;
-    }
-
-    .i_am {
-        position: relative;
-        height: 100vh;
-    }
-
-    li.splide__slide {
-        width: 30%;
-    }
-
-    .splide {
-        width: 30%;
-    }
-
-    .work_item {
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-    }
+ 
 
     p.click1 {
         top: 3%;
