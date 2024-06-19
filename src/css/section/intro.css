@@ -1,6 +1,7 @@
 #Home {
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 
@@ -12,7 +13,7 @@
 .home-wrap {
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .header_logo a {
@@ -22,14 +23,19 @@
 }
 
 .home-inner {
-    position: absolute;
+    position: relative;
     overflow: hidden;
     width: 100%;
     height: 100vh;
 }
 
+.items__layer {
+    width: 100%;
+    height: 100%;
+}
+
 .items__layer .items__item {
-    position: relative;
+    position: absolute;
 }
 
 
@@ -53,15 +59,6 @@
 
 
 
-@keyframes mouse {
-    0% {
-        bottom: 60px;
-    }
-
-    100% {
-        bottom: 30px;
-    }
-} 
 
 a.typewrite {
     width: 100%;
@@ -161,41 +158,45 @@ a.typewrite {
     }
 
     .img2 {
-        width: 90%;
-        left: 20px;
-        top: 10px;
+        width: 70%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
     }
 
 }
 
 @media screen and (min-width:769px) {
     .img1 {
-        top: 80%;
+        width: 100%;
+        top: 36%;
+        transform: translateY(-50%);
     }
 
     .img2 {
         width: 28vw;
-        top: 150px;
-        left: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .img3 {
         width: 12vw;
-        left: 950px;
-        top: 150px;
+        right: 10%;
+        top: 23%;
     }
 
     .img4 {
         width: 30vw;
-        left: 850px;
-        top: 50px;
+        right: 0;
+        top: 10%;
         transform: rotate(-10deg);
     }
 
     .img5 {
         width: 17vw;
-        top: 300px;
-        left: -20px;
+        bottom: 0;
+        left: 0;
     }
 
 }

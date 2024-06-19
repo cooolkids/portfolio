@@ -34,15 +34,15 @@ p.click1 {
 
 @keyframes jump {
     0% {
-        transform: translate(0, -8%);
+        transform: translate(0, 2%);
     }
 
     50% {
-        transform: translate(0, 0);
+        transform: translate(0, 1%);
     }
 
     100% {
-        transform: translate(0, -10%);
+        transform: translate(0, 2%);
     }
 }
 
@@ -80,23 +80,23 @@ p.click1 {
 .work_item p {
     position: absolute;
     z-index: 1;
-    font-size: 20px;
+    font-size:2vw;
     opacity: 0;
     text-align: center;
     transition: .35s;
     width: 100%;
     left: 50%;
-    top: 63%;
-    transform: translate(-50%, -50%);
+    top: 13%;
+    transform: translateX(-50%);
 }
 
 
 .i_am {
     position: relative;
-    height: 60vh;
+    height: 68vh;
     display: flex;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 160px;
 }
 
 
@@ -121,9 +121,10 @@ p.click1 {
  
 
     p.click1 {
-        top: 3%;
-        left: 40%;
-        font-size: 18px;
+        bottom: 10%;
+        left: 25%;
     }
+
+
 
 }
