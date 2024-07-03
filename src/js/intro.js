@@ -10,7 +10,7 @@ export function intro() {
 
   const ani1 = gsap.timeline();
 
-  ani1.to('#header', { display: 'none', onComplete: hideHeader })
+  ani1.to('#header', { zIndex:0, onComplete: hideHeader })
     .to(".preloader-c.c-1", { scale: 1 })
     .to(".preloader-c.c-2", { scale: 1 })
     .to(".preloader-c.c-3", { scale: 1 })
